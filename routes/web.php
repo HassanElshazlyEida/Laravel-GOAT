@@ -15,5 +15,5 @@ use Modules\Settings\Enums\SettingType;
 */
 
 Route::get('/', function () {
-    dd(SettingType::cases());
+   return '';
 });
