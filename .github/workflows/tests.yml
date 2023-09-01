@@ -43,7 +43,7 @@ jobs:
         run: |
           php artisan test
         env:
-          DB_DATABASE: cicd_testing
+          DB_DATABASE: testing
 
       - name: Run Larastan
         run: |
@@ -58,7 +58,7 @@ jobs:
         image: mysql:8.0
         env:
           MYSQL_ALLOW_EMPTY_PASSWORD: yes
-          MYSQL_DATABASE: cicd_testing
+          MYSQL_DATABASE: testing
         ports:
           - 3306:3306
         options: --health-cmd="mysqladmin ping" --health-interval=5s --health-timeout=5s --health-retries=3
