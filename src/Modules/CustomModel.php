@@ -9,8 +9,8 @@ use LogicException;
 abstract class CustomModel extends Model
 {
     /**
-     * @param [type] $query
-     * @return LogicException
+     * @param    $query
+     * @return Builder
      */
     public function newEloquentBuilder($query): Builder
     {
